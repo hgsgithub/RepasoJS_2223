@@ -1,2 +1,2 @@
-console.log("Se está ejecutando desde un archivo en body");
-alert ('Ejecutado en body');
+console.log("Se está ejecutando desde un archivo en head");
+alert ('Ejecutado en head');

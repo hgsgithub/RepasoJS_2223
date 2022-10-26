@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<h1 id="titulo">STRINGS</h1>
+<script>
+    let s1="esto es un string"
+    document.getElementById("titulo").innerHTML=s1
+    console.log("la cadena es: "+s1)
+    console.log("longitud "+s1.length);
+    console.log("Caracter 1 es : "+s1.charAt(2))
+    console.log("Primera ocurrencia s "+s1.lastIndexOf("s"))
+    console.log("Array "+s1.match(/.s/g))
+    console.log("Posicion o "+s1.search(/[o]/))
+    console.log("reemplaza las e por la i "+s1.replace(/e/g,"i"))
+    console.log("Devuelve substring "+s1.substring(0,4)) //devuelve esto
+    console.log("Posicion o "+s1.slice(0,4)) //posicion inicial - posicion final (no icluida)
+
+</script>
+<body>
+    
+</body>
+</html>

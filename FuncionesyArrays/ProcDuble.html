@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doblado</title>
+</head>
+<body>
+    <h1>Doblado de un valor introducido por pantalla</h1>
+    <script>
+    //Procedimiento de doblado (No devuelve valores)
+    var x = 0 ,y = 0 ;
+    function doblado (x,y) {
+        x= x*2
+        y= y*2
+        
+    // Visualización del doblado
+    console.log("la dupla doblada es ( "+ x +" , " + y +" )");
+    document.write ("la dupla doblada es ( "+ x+" , " + y +" )<br /> ");
+    console.log("Dentro proc. "+" x = " +x+ " y = "+y) // dentro procedimiento
+    
+     }
+     var a, b, c ,d   // declaración de variables
+     a= parseInt(prompt ("Argumento a: "));
+     b= parseInt(prompt ("Argumento b: "));
+     doblado (a,b); //llamada al procedimiento, a y b se sustituyen a x,y
+     // con variables c y d
+     c= parseInt(prompt ("Argumento c: "));
+     d= parseInt(prompt ("Argumento d: "));
+     doblado (c,d); //llamada al procedimiento, c y d se sustituyen a x,y
+     console.log("Fuera proc. "+ " x = " +x+ " y = "+y); // fuera del procedimiento 
+
+     //Procedimiento Despedida sin argumentos
+     function adios(){
+         console.log("Procedimiento doblado TERMINADO, ADIOS");
+     }
+     adios();
+     adios();
+    </script>
+    
+</body>
+</html>
