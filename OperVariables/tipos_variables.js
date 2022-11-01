@@ -7,6 +7,6 @@ console.log(typeof a);
 a=[12,23,4]; //definimos array
 console.log(a);
 console.log(typeof a);
-console.log(a instanceof String);
+console.log(a instanceof Object);
 let b;
 console.log(typeof b);
