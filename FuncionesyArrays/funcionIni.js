@@ -10,7 +10,7 @@ document.getElementById("titulo").innerHTML =suma(x,y)
 
 //Funciones sin parámetros y anónimas
 function cambia(){ // Sin parámetros
-    document.getElementById("titulo").innerHTML="Cambiado por "
+    document.getElementById("titulo").innerHTML=saludar("  Higinio")
     
  } // si no ejecuto no cambia
 document.getElementById("boton").onclick = function(){
@@ -24,4 +24,4 @@ document.getElementById("boton").onclick = function(){
 document.getElementById("titulo").innerHTML=saludar("  Higinio")*/
 // Arrow
 var saludar= nombre => "Hola " +nombre
-document.getElementById("titulo").innerHTML=saludar("  Higinio")
+//document.getElementById("titulo").innerHTML=saludar("  Higinio")

@@ -8,43 +8,46 @@
 <body>
     <h1>FUNCIONES</h1>
     <script>
-    var num1=10;
-    var num2= 2;
+    //var num1=10; //Esta variable es global
+    //var num2= 2; //Esta variable es global
     
     /*// funcion sin parámetros y con retorno.
      function suma(){
-        console.log(num1+num2);
-        var su=num1+num2
-        return su // si no lo ponemos no devuelve el valor y no se puede utilizar fuera
+        //console.log(num1+num2);
+        var su=num1+num2 //Cuidado! esta variable es local
+        //return su // si no lo ponemos no devuelve el valor de la suma a la funcion
     }
-    suma(); 
-    console.log(suma()) //undefined sin el return */
+    //suma(); //Hay que invocarla para que se ejecute de alguna forma.
+    var total = suma() + 20; //Sin return error NaN
+    console.log(total)
+    //console.log(su()) //undefined sin el return */
 
     /*// funcion con parámetros y con retorno.
     function suma(num1,num2){
         return console.log(num1+num2);
     }
-    suma(20,10); */
+    suma(20,10); //Invoca y asigna valores */
   
    /*// funcion que no devuelve nada
    function suma(num1,num2){
         //return num1+num2; // tiene que ser la última línea
-        //num1+num2; //sin return undefined
+        num1+num2; //sin return undefined
         let total =num1+num2; //undefined
-        console.log(total);
-        //return total
+        console.log("dentro "+total);
+        return total
 
     }
-    suma(4,7);
-    var total=suma(10,10) //undefined sin el return
-    alert("total2  "+total); // total no está definido sin el return*/
+    suma(5,8);
+    var total=suma(10,10) //undefined sin el return y reasigna valores
+    console.log("fuera "+total);
+    alert("fuera  "+total); // Cuidado con el ámbito de las variables */
 
     /*// IIFE (Inmediately Invoked Function Expression);
     (function suma(num1,num2){
         console.log(num1+num2);
     })(20,15); // Se invoca automáticamente 
     
-   //IIFE, Sin flechas anónima
+   //IIFE, Sin flechas anónima y sin parámetros
     (function(){
         console.log("Date de Alta, funcion completa");
     })();
@@ -64,14 +67,14 @@
         console.log ("Date de Alta "+nombre);
     })()*/
 
-//funcion anónima y paso de función por parámetro
+/*//funcion anónima y paso de función por parámetro
     let llamaFunc=function(func,param){
         func(param);
         alert(param)
     }
     llamaFunc(function(name){
         console.log("Hola"+" "+name);
-    },"Juan" );
+    },"Juan" );*/
 
 
 </script>
